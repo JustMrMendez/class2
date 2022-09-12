@@ -20,7 +20,6 @@ async function add_post() {
     const row = table.insertRow();
     row.insertCell().innerText = post.first_name;
     row.insertCell().innerText = post.last_name;
-    row.insertCell().innerText = post.email;
 
 }
 

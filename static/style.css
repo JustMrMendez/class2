@@ -1,9 +1,17 @@
+:root {
+  --base : #A0AFB3;
+  --accent-light : #ffffff;
+  --primary: #EF6C7F;
+  --accent-dark: #DC4669;
+  --base-dark: #1F1628;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: var(--base);
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #333;
