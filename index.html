@@ -5,12 +5,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/static/utils.js"></script>
     <script type="module">
-      import '/components/AppNav.js';
+      import "/components/AppNav.js";
+      import "/components/Post.js";
+
       // when the add post button is clicked alert('add post button clicked')
-      const addPostBtn = document.querySelector('#add');
-      addPostBtn.addEventListener('click', () => {
-        alert('add post button clicked');
+      const addPostBtn = document.querySelector("#add");
+      addPostBtn.addEventListener("click", () => {
+        console.log("add post button clicked");
       });
+      
     </script>
     <link rel="stylesheet" href="/static/style.css" />
     <meta charset="UTF-8" />
@@ -20,7 +23,8 @@
   </head>
   <body class="max-h-screen">
     <header>
-      <nav style="background-color: var(--accent-light);"
+      <nav
+        style="background-color: var(--accent-light)"
         class="py-3 fixed top-0 w-screen shadow-sm border-b flex justify-around"
       >
         <div class="flex items-center">
@@ -65,7 +69,7 @@
             <div class="flex justify-between items-center p-3">
               <div class="flex items-center">
                 <img
-                  src="https://picsum.photos/50"
+                  src="/static/img/profile1.jpg"
                   alt=""
                   class="w-10 h-10 rounded-full"
                 />
@@ -75,9 +79,9 @@
               </div>
               <p class="text-gray-500 text-sm">2 hours ago</p>
             </div>
-            <div class="">
-              <img src="/static/img/post1.jpg" alt="" class="w-full" />
-            </div>
+
+            <img src="/static/img/post1.jpg" alt="" class="w-full" />
+
             <div class="p-3">
               <p class="text-gray-700">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -91,7 +95,7 @@
             <div class="flex justify-between items-center p-3">
               <div class="flex items-center">
                 <img
-                  src="https://picsum.photos/50"
+                  src="/static/img/profile1.jpg"
                   alt=""
                   class="w-10 h-10 rounded-full"
                 />
@@ -100,7 +104,7 @@
                   <p class="text-gray-500 text-sm">2 hours ago</p>
                 </div>
               </div>
-              <div class="flex items-center ">
+              <div class="flex items-center">
                 <button class="bg-gray-200 p-2 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +137,7 @@
             <div class="flex justify-between items-center p-3">
               <div class="flex items-center">
                 <img
-                  src="https://picsum.photos/50"
+                  src="/static/img/profile1.jpg"
                   alt=""
                   class="w-10 h-10 rounded-full"
                 />
@@ -169,11 +173,10 @@
               </p>
             </div>
           </div>
-          <br /><br /><br /><br />
+          <feed-post />
         </div>
       </div>
     </main>
     <app-nav />
-   
   </body>
 </html>
