@@ -8,12 +8,12 @@
       import "/components/AppNav.js";
       import "/components/Post.js";
 
-      // when the add post button is clicked alert('add post button clicked')
-      const addPostBtn = document.querySelector("#add");
-      addPostBtn.addEventListener("click", () => {
-        console.log("add post button clicked");
-      });
-      
+
+      // const addPostBtn = document.querySelector("#add");
+      // addPostBtn.addEventListener("click", () => {
+      //   console.log("add post button clicked");
+      // });
+
     </script>
     <link rel="stylesheet" href="/static/style.css" />
     <meta charset="UTF-8" />
@@ -36,6 +36,7 @@
         </div>
         <div class="flex justify-between space-x-5">
           <button
+            onclick="addPost()"
             id="add"
             class="transition-all duration-300 text-blue-500 p-2 rounded-md flex hover:scale-105 items-center hover:bg-white"
           >
@@ -59,7 +60,7 @@
       <!-- post -->
       <div class="flex justify-center">
         <div
-          class="no-scrollbar flex flex-col w-full md:max-w-2xl h-screen overflow-scroll"
+          class="feed flex flex-col w-full md:max-w-2xl h-screen overflow-scroll"
         >
           <!-- add blank space -->
           <br /><br /><br /><br />

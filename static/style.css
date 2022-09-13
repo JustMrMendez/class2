@@ -6,7 +6,7 @@
   --base-dark: #1F1628;
 }
 
-.no-scrollbar::-webkit-scrollbar {
+.feed::-webkit-scrollbar {
   display: none;
 }
 
