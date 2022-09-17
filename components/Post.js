@@ -52,7 +52,7 @@ template.innerHTML = `
         </div>
         <p>1 hours ago</p>
     </div>
-    <img src="/static/img/post1.jpg" alt="" />
+    <img src="static/img/post1.jpg" alt="" />
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Quisquam, quae.
